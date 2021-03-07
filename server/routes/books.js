@@ -1,9 +1,16 @@
+/*
+File Name: books.js
+Authors Name : Nikhil
+Student ID : 301167843
+Web App name: Books List App
+*/
+
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 const books = require('../models/books');
-//let ObjectId = mongoose.Types.ObjectId;
 // define the book model
 let book = require('../models/books');
 
@@ -31,7 +38,7 @@ router.get('/add', (req, res, next) => {
 
 });
 
-// POST process the Book Details page and create a new Book - CREATE
+// POST process the Book Details page and create a new Book - CREATE(post click submit)
 router.post('/add', (req, res, next) => {
   let newbook = book({
     Title: req.body.title,

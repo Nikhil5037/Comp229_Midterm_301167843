@@ -1,4 +1,9 @@
-/* custom JS goes here */
+/*
+File Name: app.js
+Authors Name : Nikhil
+Student ID : 301167843
+Web App name: Books List App
+*/
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
 $.fn.pageMe = function(opts){
